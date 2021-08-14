@@ -39,7 +39,7 @@ resource "aws_s3_bucket" "b" {
 resource "aws_s3_bucket_object" "object" {
   bucket = "omernyc-tf-test-bucket"
   key    = "file1"
-  source = "/images/omer123_test.png"
+  source = "omer123_test.png"
 
   # The filemd5() function is available in Terraform 0.11.12 and later
   # For Terraform 0.11.11 and earlier, use the md5() function and the file() function:
