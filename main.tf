@@ -50,7 +50,7 @@ resource "aws_s3_bucket_object" "object" {
 #multiple buckets
 variable "bucket_names" {
     type = set(string)
-    default = ["omerbucket1-test","omerbucket2-test","omerbucket3-test"]
+    default = ["omerbucket1-test","omerbucket2-test","omerbucket5-test"]
 }
 
 resource "aws_s3_bucket" "bucket2" {
